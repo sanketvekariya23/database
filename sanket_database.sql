@@ -4,7 +4,7 @@ create table customer(
 	name1 varchar(100),
 	phone_number integer(100));
 
-select*from customer;alter
+select*from customer;
 
 INSERT INTO customer 
 VALUES (123,"sanket", 987);
