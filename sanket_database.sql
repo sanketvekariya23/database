@@ -30,3 +30,6 @@ insert into orders
 values(04,"vivo1901 cover",350,789);
 
 select*from orders;
+
+select costomer.name1 ,customer.phone_number,orders.orderid,orders.order_price
+from orders inner join customer on customer.id = orders.customerid;
