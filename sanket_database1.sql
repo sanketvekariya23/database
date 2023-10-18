@@ -1,4 +1,6 @@
 create database sanket_database;
+-- create table1 
+
 create table customer(
 	id integer(20),
 	name1 varchar(100),
@@ -17,6 +19,7 @@ VALUES (789,"rushil", 987);
 
 select *from customer;
 
+-- create table2
 
 create table orders(orderid integer(20),order_name varchar(100), order_price integer(20), customerid integer(20));
 
@@ -29,7 +32,20 @@ values(03,"books",120,456);
 insert into orders
 values(04,"vivo1901 cover",350,789);
 
-select*from orders;
+select*from orders
 
-select costomer.name1 ,customer.phone_number,orders.orderid,orders.order_price
-from orders inner join customer on customer.id = orders.customerid;
+
+-- joining of two tables 
+
+SELECT orderid,order_price
+FROM orders
+INNER JOIN customer ON customer.id = orders.customerid;
+
+-- select commands
+select id,phone_number, from customer;
+
+-- distinct keyword is used to count number
+-- where clause used to filter record
+-- where is use for condition
+select * from customer;
+select* from customer where id = 456;
