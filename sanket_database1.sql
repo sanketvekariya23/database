@@ -127,3 +127,34 @@ set order_name = "water bottle"
 where orderid = 03;
 
 select * from orders;
+
+-- delete  delete is delete existing record
+
+delete from orders where orderid = 04;
+select * from orders;
+
+-- delete all records withou deleting table
+delete from orders;
+select * from orders;
+
+-- drop -> drop is used to delete table with record from the databse
+
+drop table customer;
+
+select * from customer;
+
+
+-- min and max 
+select min(order_price) from orders;
+
+select max(order_price) from orders;
+
+select * from orders;
+
+select min(order_price) 
+from orders 
+where orderid <=2;
+
+select sum(order_price)
+from orders
+where orderid>=2;
