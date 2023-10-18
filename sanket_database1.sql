@@ -158,3 +158,16 @@ where orderid <=2;
 select sum(order_price)
 from orders
 where orderid>=2;
+
+-- like oprator is used to search specific pattern in column
+
+select *from customer 
+where phone_number like "9%";
+
+select*from orders
+where order_name like "b%";
+
+
+ -- it return all those record whose contail o 
+select*from orders
+where order_name like "%o%";
