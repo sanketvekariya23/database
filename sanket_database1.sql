@@ -170,4 +170,8 @@ where order_name like "b%";
 
  -- it return all those record whose contail o 
 select*from orders
-where order_name like "%o%";
+where order_name like "%o%";	
+
+-- between oprator is used to select specific values in between range
+
+select * from orders where order_price between 100 and 300;
